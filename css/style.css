@@ -1,0 +1,192 @@
+/*-- NAVBAR --*/
+#main-navbar a{
+  border-bottom: 5px solid #343a40;
+  color:white;
+  text-transform: uppercase;
+}
+
+#main-navbar.scrolled {
+  background-color: #343a40 !important;
+  transition: background-color 200ms linear;
+}
+
+#main-navbar a:hover, #main-navbar .active{
+  border-bottom-color: white;
+  transition: border-color 500ms;
+}
+
+
+header{
+	width: 100%;
+	overflow: hidden;
+}
+
+/*-- LOADING -- */
+#loading{
+  width: 50px;
+  height: 50px;
+  border: solid 5px #ccc;
+  border-top-color: #ff6a00;
+  border-radius: 100%;
+  background-color:red;
+  position: fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+
+  animation: muter 2s infinite;
+}
+@keyframes muter{
+  from{transform: rotate(0deg)}
+  to{transform:rotate(360deg)}
+}
+/*-- SHOWCASE --*/
+header .rows{
+  background: url('../img/dipa-bg.1.png');
+  background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	height: 114vh
+}
+#reset{
+  margin-top:150px;
+}
+
+/* MY ACTIVITES */
+#aktivitas img:hover {
+  transform: scale(1.1);
+  transition-property: transform ;
+  transition-duration: .5s;
+}
+
+/* #showcase{
+  background: url('../img/dipa-bg-1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 99vw;
+  height: 100vh;
+  background-attachment: fixed;
+} */
+
+#showcase h1{
+  padding-top: 250px;
+}
+
+.dark-overlay{
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+.tab-ov {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	-webkit-transition: .5s ease;
+	-moz-transition: .5s ease;
+	-ms-transition: .5s ease;
+	-o-transition: .5s ease;
+	background: rgba(56, 54, 54, 0.94);
+}
+
+.tab-row-img:hover .tab-ov{
+	opacity: 1;
+}
+
+.tab-img {
+	width: 100%;
+	height: 230px;
+	object-fit: cover;
+	object-position: center;
+	display: block;
+}
+
+.tab-ov-text {  
+	color: white;
+	font-size: 15px;
+	position: absolute;
+	font-weight: 600;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+/* skills */
+#skills {
+	background: #f1f1f1;
+	padding: 40px;
+	display: table;
+	width: 100%;
+}
+
+.skills-container {
+	padding: 20px;
+	width: 85%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.tech-icon {
+	width: 23%;
+	margin-right: 2%;
+	text-align: center;
+	padding: 13px;
+	float: left;
+	margin-top: 20px;
+  transition: .5s ease-in;
+  /*prefix vendor*/
+	-webkit-transition: .5s ease-in;
+	-moz-transition: .5s ease-in;
+	-ms-transition: .5s ease-in;
+	-o-transition: .5s ease-in;
+}
+@media (max-width: 420px) {
+	.tech-icon {
+		width: 100%;
+	}
+}
+
+.tech-icon:hover {
+	background: greenyellow;
+	color: #e74c3c;
+}
+
+.tech-icon:hover i {
+	color: #e74c3c;
+	border-bottom: 5px solid #e74c3c;
+}
+
+.tech-icon i {
+	font-size: 100px;
+	color: #e74c3c;
+	border-bottom: 5px solid greenyellow;
+	padding-bottom: 20px;
+}
+
+.tech-text{
+	margin-top: 40px;
+	display: block;	
+	font-size: 13pt;
+} 
+
+.tech-text h3 {
+	color: #777;
+	font-weight: bold;
+	display: block;
+	font-size: 27pt;
+}
